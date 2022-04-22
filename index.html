@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css" media="screen">
-    <title>Auditoria Virtual</title>
+    <title>Formulário</title>
 </head>
 
 
@@ -20,7 +20,7 @@
 
 
     <div>
-        <h1 id="titulo">Auditoria Virtual</h1>
+        <h1 id="titulo">Formulário</h1>
         <p id="subtitulo">Preencha o questionário abaixo.</p>
         <br>
     </div>
@@ -57,21 +57,11 @@
 
             <div class="campo">
                 <label for="pergunta1"><strong>Pergunta 1</strong></label><br>
-                <input type="radio" id="opção1" name="data[pergunta1]" value="Opção 1">
+                <input type="radio" id="opção1" name="data[pergunta1]" value="Opção 1" required>
                 <label for="opção1">Opção 1</label><br>
-                <input type="radio" id="opção2" name="data[pergunta1]" value="Opção 2">
+                <input type="radio" id="opção2" name="data[pergunta1]" value="Opção 2" required>
                 <label for="opção2">Opção 2</label><br>
-                <input type="radio" id="opção3" name="data[pergunta1]" value="Opção 3">
-                <label for="opção3">Opção 3</label><br>
-            </div>
-
-            <div class="campo">
-                <label for="pergunta2"><strong>Pergunta 2</strong></label><br>
-                <input type="checkbox" id="opção1" name="data[pergunta2]" value="Opção 1">
-                <label for="opção1">Opção 1</label><br>
-                <input type="checkbox" id="opção2" name="data[pergunta2]" value="Opção 2">
-                <label for="opção2">Opção 2</label><br>
-                <input type="checkbox" id="opção3" name="data[pergunta2]" value="Opção 3">
+                <input type="radio" id="opção3" name="data[pergunta1]" value="Opção 3" required>
                 <label for="opção3">Opção 3</label><br>
             </div>
 
@@ -82,7 +72,7 @@
 
             <div class="campo">
                 <label><strong>Observações</strong></label><br>
-                <textarea row="6" style="width: 50em" id="observacoes" name="data[observacoes]"></textarea>
+                <textarea row="6" style="width: 26em" id="observacoes" name="data[observacoes]"></textarea>
              </div>
 
         </fieldset>

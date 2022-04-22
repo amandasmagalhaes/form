@@ -23,12 +23,10 @@ body{
     margin-left: 1%;
 }
 
-input, select, textarea, button{
-    border-radius: 5px;
-}
 
 .campo{
     margin-bottom: 2em;
+    display: block
 }
 
 .botao{
