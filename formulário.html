@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="stylesheet" type="text/css" href="formulario.css" media="screen"-->
+    <title>Auditoria Virtual</title>
+</head>
+
+
+<body>
+
+
+    <div>
+        <h1 id="titulo">Auditoria Virtual</h1>
+        <p id="subtitulo">Preencha o questionário abaixo.</p>
+        <br>
+    </div>
+
+
+    <form
+        action="https://sheetdb.io/api/v1/xn4w750d223t3"
+        method="POST"
+        name="form">
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome completo:</strong></label>
+                <input type="text" name="data[nome]"" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <br>
+                <label for="email"><strong>E-mail:</strong></label>
+                <input type="email" name="data[email]" id="email" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <br>
+                <label for="pergunta1"><strong>Pergunta 1</strong></label>
+                <br>
+                <label>
+                    <input type="radio" name="data[pergunta1]" value = "opcao1">Opção 1
+                </label>
+                <label>
+                    <input type="radio" name="data[pergunta1]" value = "opcao2">Opção 2
+                </label>
+                <label>
+                    <input type="radio" name="data[pergunta1]" value = "opcao3">Opção 3
+                </label>
+            </div>
+
+            <div class="campo">
+                <br>
+                <label for="pergunta2"><strong>Pergunta 2</strong></label>
+                <br>
+                <select id="pergunta2">
+                    <option selected disabled="">Selecione</option>
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                    <option>Opção 3</option>
+                </select>
+            </div>
+
+            <div id="check">
+                <br>
+                <label for="pergunta3"><strong>Pergunta 3</strong></label>
+                <br>
+                <input type="checkbox" id="opção1" name="opção1" value="Opção 1">
+                <label for="opção1">Opção 1</label>
+                <input type="checkbox" id="opção2" name="opção2" value="Opção 2">
+                <label for="opção2">Opção 2</label>
+                <input type="checkbox" id="opção3" name="opção3" value="Opção 3">
+                <label for="opção3">Opção 3</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <br>
+            <label>Observações</label>
+            <br>
+            <textarea row="6" style="width: 26em" id="observacoes" name="data[observacoes]"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Enviar</button>
+            
+    </form>
+    
+</body>
+</html>
