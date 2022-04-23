@@ -106,12 +106,12 @@
 
             <div class="campo">
                 <label for="nome"><strong>Nome completo:</strong></label>
-                <input type="text" name="data[nome]" id="nome" required>
+                <input type="text" name="data[nome]" id="nome">
             </div>
 
             <div class="campo">
                 <label for="email"><strong>E-mail:</strong></label>
-                <input type="email" name="data[email]" id="email" required>
+                <input type="email" name="data[email]" id="email">
             </div>
 
         </fieldset>
@@ -152,12 +152,21 @@
 
 
         <br><br>
-        <button class="botao" type="submit">Enviar</button>
+        <input class="botao" type="submit" onclick="funcao()" value="Enviar">
             
 
     </form>
 
-    
+
+
+    <script>
+        function funcao()
+        {
+        alert("Enviado!");
+        }
+     </script>
+
+
 
 
 </body>
