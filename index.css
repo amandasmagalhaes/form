@@ -26,6 +26,11 @@ body{
 
 .campo{
     margin-bottom: 2em;
+    display: inline-flex
+}
+
+.campo2 label{
+    margin-bottom: 0em;
     display: block
 }
 
