@@ -5,11 +5,77 @@
 
 
 <head>
+
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="form.css" media="screen">
     <title>Formulário</title>
+
+
+    <style>
+
+        body{
+            background-color: white;
+            background-position: center;
+            background-size: cover;
+            margin: 5em;
+            font-family: sans-serif;
+            margin-top: 40px;
+            padding: 1em;
+            font-size: 1em;
+            color: #000000;
+        }
+        
+        #titulo{
+            font-family: sans-serif;
+            color: #000000;
+        }
+        
+        #subtitulo{
+            font-family: sans-serif;
+            color: #000000;
+        }
+        
+        .campo{
+            margin-bottom: 0em;
+            display: block;
+            padding: 0.5em;
+        }
+        
+        .campo2 label{
+            margin-bottom: 0em;
+            display: block;
+            padding: 0.5em;
+        }
+        
+        .botao{
+
+            background-color: #1e7ede;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+            font-size: 1em;
+            font-family: sans-serif;
+            background: #1e7ede;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+            position: relative;
+            left: 50%;
+        }
+        
+        .botao:hover{
+            background: #3f92e5;
+            box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+            text-shadow: none;
+        }  
+    
+    </style>
+
+
+
 </head>
 
 
@@ -77,7 +143,7 @@
 
         <fieldset class="grupo">
 
-            <div class="campo">
+            <div class="campo2">
                 <label><strong>Observações:</strong></label>
                 <textarea row="6" style="width: 26em" id="observacoes" name="data[observacoes]"></textarea>
              </div>
@@ -85,6 +151,7 @@
         </fieldset>
 
 
+        <br><br>
         <button class="botao" type="submit">Enviar</button>
             
 
